@@ -76,7 +76,7 @@ let panel = {
       }
 
       if (options.onlyOriginalIcon) {
-        panel['icon'] = options.checkmark.seal.fill
+        panel['icon'] = options.onlyOriginalIcon
         panel['icon-color'] = options.onlyOriginalIconColor ? options.onlyOriginalIconColor : undefined
       } else {
         panel['style'] = options.onlyOriginalStyle
@@ -102,7 +102,7 @@ let panel = {
 
       panel['content'] = options.notAvailableContent
       if (options.notAvailableIcon) {
-        panel['icon'] = options.checkmark.seal.fill
+        panel['icon'] = options.notAvailableIcon
         panel['icon-color'] = options.notAvailableIconColor ? options.notAvailableIconColor : undefined
       } else {
         panel['style'] = options.notAvailableStyle
