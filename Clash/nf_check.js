@@ -59,7 +59,7 @@ let panel = {
     .then(async region => {
       if (options.fullIcon) {
         panel['icon'] = options.fullIcon
-        panel['icon-color'] = options.fullIconColor ? options.fullIconColor : undefined
+        panel['icon-color'] = options.fullIconColor ? options.fullIconColor : #000000
       } else {
         panel['style'] = options.fullStyle
       }
