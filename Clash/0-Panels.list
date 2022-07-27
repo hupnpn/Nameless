@@ -1,0 +1,42 @@
+#!name=Panels
+#!desc=信息面板
+
+[Panel]
+#Surge Pro标题,可显示启动时间,点击刷新为重载配置
+SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
+
+#流量统计
+TrafficStatistics = script-name=TrafficStatistics,update-interval=1
+
+#机场信息
+immtel = script-name=immtel,update-interval = 43200
+
+#机场信息
+FlowerCloud = script-name=FlowerCloud,update-interval = 43200
+
+#奈飞解锁查询
+nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
+
+#YouTube解锁查询
+youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解锁检测", update-interval=1
+
+[Script]
+#附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
+SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js ,argument=icon=crown.fill&color=#000000
+
+#流量统计 点击以切换网络界面
+TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle.fill&color=#000000
+
+#机场信息
+#必须修改的字段:你encode后的机场订阅链接
+FlowerCloud = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fapi.flowercloud.xyz%2Fosubscribe.php%3Fsid%3D9114%26token%3DUE7gdv5kKskn%26sip002%3D1&reset_day=6&title=FlowerCloud&icon=airplane&color=#000000
+
+#机场信息
+#必须修改的字段:你encode后的机场订阅链接
+immtel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js ,script-update-interval=0,argument=url=https%3A%2F%2Fapi.immtel.co%2FSubscription%2FShadowRocketImportService%3Ft%3Dsip002%26sid%3D4478%26token%3DOUy0E0vuVTY&reset_day=15&title=immtel&icon=airplane&color=#000000
+
+#奈飞解锁查询
+nf_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633090677159, argument=title=Netflix 解锁检测
+
+#YouTube解锁查询
+youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633090827446, argument=title=YouTube 解锁检测
