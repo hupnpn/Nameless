@@ -77,7 +77,7 @@ let panel = {
 
       if (options.onlyOriginalIcon) {
         panel['icon'] = options.onlyOriginalIcon
-        panel['icon-color'] = options.onlyOriginalIconColor ? options.onlyOriginalIconColor : undefined
+        panel['icon-color'] = options.onlyOriginalIconColor ? options.onlyOriginalIconColor : #000000
       } else {
         panel['style'] = options.onlyOriginalStyle
       }
@@ -103,7 +103,7 @@ let panel = {
       panel['content'] = options.notAvailableContent
       if (options.notAvailableIcon) {
         panel['icon'] = options.notAvailableIcon
-        panel['icon-color'] = options.notAvailableIconColor ? options.notAvailableIconColor : undefined
+        panel['icon-color'] = options.notAvailableIconColor ? options.notAvailableIconColor : #000000
       } else {
         panel['style'] = options.notAvailableStyle
       }
@@ -113,7 +113,7 @@ let panel = {
     console.log(error)
     if (options.errorIcon) {
       panel['icon'] = options.errorIcon
-      panel['icon-color'] = options.errorIconColor ? options.errorIconColor : undefined
+      panel['icon-color'] = options.errorIconColor ? options.errorIconColor : #000000
     } else {
       panel['style'] = options.errorStyle
     }
