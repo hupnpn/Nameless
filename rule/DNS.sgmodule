@@ -30,22 +30,6 @@ alt5-mtalk.google.com = 3.3.3.3, 2607:f8b0:4023:1::bc, 142.250.112.188 // Fireba
 alt6-mtalk.google.com = 3.3.3.3, 172.217.197.188 // Firebase Cloud Messaging
 alt7-mtalk.google.com = 74.125.200.188, 2607:f8b0:4002:c03::bc, 108.177.12.188 // Firebase Cloud Messaging
 alt8-mtalk.google.com = 3.3.3.3 // Firebase Cloud Messaging
-# Google CDN
-# blog.google = server:119.29.29.29 // Google Blog
-# googletraveladservices.com = server:119.29.29.29 // Google Flights
-# dl.google.com = server:119.29.29.29 // Google Download
-# dl.l.google.com = server:119.29.29.29 // Google Download
-# clientservices.googleapis.com = server:119.29.29.29 // Google Chrome
-# update.googleapis.com = server:119.29.29.29 // Google Update
-# translate.googleapis.com = server:119.29.29.29 // Google Translate
-# fonts.googleapis.com = server:119.29.29.29 // Google Fonts
-# fonts.gstatic.com = server:119.29.29.29 // Google Fonts
-# Google STUN
-# stun.l.google.com = server:syslib // Google STUN
-# stun1.l.google.com = server:syslib // Google STUN
-# stun2.l.google.com = server:syslib // Google STUN
-# stun3.l.google.com = server:syslib // Google STUN
-# stun4.l.google.com = server:syslib // Google STUN
 
 # > Router Admin Panel
 *.id.ui.direct = server:syslib // Ubiquiti Unifi Network App
