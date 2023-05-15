@@ -1,0 +1,66 @@
+Proxy
+custom_proxy_group=全球加速（Global）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]手动选择（Proxy）`[]全球直连（Direct）
+custom_proxy_group=手动选择（Proxy）`select`.*
+custom_proxy_group=油管（YouTube）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=奈飞（Netflix）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=迪士尼（Disney）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=华纳（HBO Max）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=亚马逊（Prime Vidoe）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=港台番剧（Fan drama）`select`[]香港（H K）`[]台湾（T W）`[]全球直连（Direct）
+custom_proxy_group=国外媒体（Outer）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=国内媒体（Inside）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=ChatGPT（OpenAI）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=谷歌（Google）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=网盘（Pikpak）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=苹果（Apple）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）`[]全球直连（Direct）
+custom_proxy_group=微软（Microsoft）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）`[]全球直连（Direct）
+custom_proxy_group=游戏（Geam）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）`[]全球直连（Direct）
+custom_proxy_group=漏网之鱼（Final）`select`[]香港（H K）`[]台湾（T W）`[]韩国（K R）`[]日本（J P）`[]狮城（S G）`[]美国（U S）`[]全球加速（Global）`[]手动选择（Proxy）
+custom_proxy_group=全球直连（Direct）`select`[]DIRECT`[]全球加速（Global）
+custom_proxy_group=广告拦截（Stop）`select`[]REJECT`[]DIRECT
+custom_proxy_group=香港（H K）`select`(香港|HK|HKG|Hong Kong)
+custom_proxy_group=台湾（T W）`select`(台湾|TW|TWN|Taiwan)
+custom_proxy_group=韩国（K R）`select`(KR|Korea|KOR|韩国)
+custom_proxy_group=日本（J P）`select`(日本|JP|JPN|Japan)
+custom_proxy_group=狮城（S G）`select`(新加坡|狮城|SG|SGP|Singapore)
+custom_proxy_group=美国（U S）`select`(美国|US|USA|United States)
+
+
+
+#规则
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
+ruleset=广告拦截（Stop）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+ruleset=广告拦截（Stop）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+ruleset=谷歌（Google）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+ruleset=微软（Microsoft）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
+ruleset=微软（Microsoft）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+ruleset=苹果（Apple）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+ruleset=全球加速（Global）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+ruleset=ChatGPT（OpenAI）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
+ruleset=游戏（Geam）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
+ruleset=游戏（Geam）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
+ruleset=游戏（Geam）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
+ruleset=游戏（Geam）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
+ruleset=游戏（Geam）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
+ruleset=油管（YouTube）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
+ruleset=奈飞（Netflix）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
+ruleset=港台番剧（Fan drama）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
+ruleset=港台番剧（Fan drama）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
+ruleset=港台番剧（Fan drama）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+ruleset=国内媒体（Inside）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
+ruleset=国外媒体（Outer）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+ruleset=全球加速（Global）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
+;ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaIp.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+ruleset=全球直连（Direct）,https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
+;ruleset=全球直连（Direct）,[]GEOIP,LAN
+ruleset=全球直连（Direct）,[]GEOIP,CN
+ruleset=漏网之鱼（Final）,[]FINAL
+
+
+enable_rule_generator=true
+overwrite_original_rules=true
