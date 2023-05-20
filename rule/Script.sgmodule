@@ -18,27 +18,27 @@ force-http-engine-hosts = %APPEND% boxjs.net, boxjs.com
 
 [Rule]
 # > 策略优选
-AND,((DOMAIN,iosapps.itunes.apple.com), (SCRIPT,策略优选)),Apple-苹果
+AND,((DOMAIN,iosapps.itunes.apple.com), (SCRIPT,策略优选)),𝗔𝗽𝗽𝗹𝗲
 # > Siri与搜索 代理
-PROCESS-NAME,LookupViewService,Apple-苹果
-PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService,Apple-苹果
-DOMAIN,lookup-api.apple.com,Apple-苹果
-DOMAIN,lookup-api.apple.com.edgekey.net,Apple-苹果
-DOMAIN,e16991.b.akamaiedge.net,Apple-苹果
+PROCESS-NAME,LookupViewService,𝗔𝗨𝗧𝗢
+PROCESS-NAME,/System/Library/PrivateFrameworks/Lookup.framework/Versions/A/XPCServices/LookupViewService.xpc/Contents/MacOS/LookupViewService,𝗔𝗨𝗧𝗢
+DOMAIN,lookup-api.apple.com,𝗔𝗨𝗧𝗢
+DOMAIN,lookup-api.apple.com.edgekey.net,𝗔𝗨𝗧𝗢
+DOMAIN,e16991.b.akamaiedge.net,𝗔𝗨𝗧𝗢
 # 慧车天下 去广告修正
 URL-REGEX,api-access.pangolin-sdk-toutiao.com,REJECT-NO-DROP
 # > VSCO 代理
-DOMAIN,measurement.com,Global - 全球加速
+DOMAIN,measurement.com,𝗔𝗨𝗧𝗢
 # > 555电影网
-DOMAIN,www.o8tv.com,DIRECT
+DOMAIN,www.o8tv.com,𝗗𝗜𝗥𝗘𝗖𝗧
 # > 大师兄影视
-DOMAIN,dsxys.pro,DIRECT
+DOMAIN,dsxys.pro,𝗗𝗜𝗥𝗘𝗖𝗧
 # > Safari 防跳转
 DOMAIN,app-site-association.cdn-apple.com,REJECT
 # > 机场网站 代理
-DOMAIN-SUFFIX,dlercloud.com,Global - 全球加速
-DOMAIN,zhuan.mlsao.xyz,Global - 全球加速
-DOMAIN,zh.mk,Global - 全球加速
+DOMAIN-SUFFIX,dlercloud.com,𝗔𝗨𝗧𝗢
+DOMAIN,zhuan.mlsao.xyz,𝗔𝗨𝗧𝗢
+DOMAIN,zh.mk,𝗔𝗨𝗧𝗢
 # > Passkey
 DOMAIN,ql.lowking.pro,服务器 01
 # > 爱奇艺 去广告
@@ -49,11 +49,11 @@ URL-REGEX,^http:\/\/.*\.cp31\.ott\.cibntv\.net\/youku\/,REJECT-TINYGIF
 # > 京东 去广告
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
 # > Boxjs 代理
-DOMAIN-KEYWORD,jsdelivr.net,Global - 全球加速
+DOMAIN-KEYWORD,jsdelivr.net,𝗔𝗨𝗧𝗢
 # > Sub-Store 代理
-DOMAIN-KEYWORD,vercel.app,Global - 全球加速
+DOMAIN-KEYWORD,vercel.app,𝗔𝗨𝗧𝗢
 # > Price 代理
-DOMAIN-SUFFIX,coingecko.com,Global - 全球加速
+DOMAIN-SUFFIX,coingecko.com,𝗔𝗨𝗧𝗢
 # > 腾讯视频 去开屏
 OR,((DOMAIN,pgdt.gtimg.cn), (AND,((USER-AGENT,live4iphoneRel*), (IP-CIDR,0.0.0.0/0,no-resolve)))),REJECT-DROP
 # > 掌阅 去广告
@@ -132,8 +132,6 @@ URL-REGEX,^https:\/\/doc\.linkease\.com\/linkease\/appGuide\/banner,REJECT
 # 分割线——————————————————————————
 
 [Script]
-# > 苹果策略优选
-策略优选 = type=rule,timeout=60,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/speedLimit.js,argument="Group=Apple - 苹果&policy=DIRECT&time=15&minSpeed=20"
 # > Spark 解锁、Forza Football解锁
 通用解锁 = type=http-response,pattern=https:\/\/api\.revenuecat\.com,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/revenuecat.js,script-update-interval=-1
 # > 扫描全能王 pro
