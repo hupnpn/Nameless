@@ -1,5 +1,4 @@
 #RULE-SET,https://raw.githubusercontent.com/hupnpn/Nameless/main/rule/Advertising.list,REJECT
-
 DOMAIN-KEYWORD,112wan
 DOMAIN-KEYWORD,789htbet
 DOMAIN-KEYWORD,adform
